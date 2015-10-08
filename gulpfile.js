@@ -5,6 +5,7 @@ var pngquant = require('imagemin-pngquant');
 
 // todo: change file path for src directory (hard code it)
 // todo: add variable names for dirs
+// todo: android directories: add drawable to gulp.dest
 
 gulp.task('optimize', function () {
     return gulp.src('src/**')
