@@ -2,6 +2,10 @@ var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 
+
+// todo: change file path for src directory (hard code it)
+// todo: add variable names for dirs
+
 gulp.task('optimize', function () {
     return gulp.src('src/**')
         .pipe(imagemin({
