@@ -6,6 +6,8 @@ var pngquant = require('imagemin-pngquant');
 // todo: change file path for src directory (hard code it)
 // todo: add variable names for dirs
 // todo: android directories: add drawable to gulp.dest
+// todo: http://stackoverflow.com/questions/26784094/can-i-use-a-gulp-task-with-multiple-sources-and-multiple-destinations
+
 
 gulp.task('optimize', function () {
   return gulp.src('src/**')
