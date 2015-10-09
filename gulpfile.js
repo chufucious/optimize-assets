@@ -8,9 +8,18 @@ var pngquant = require('imagemin-pngquant');
 // todo: android directories: add drawable to gulp.dest
 // todo: http://stackoverflow.com/questions/26784094/can-i-use-a-gulp-task-with-multiple-sources-and-multiple-destinations
 
+var sourceDirectory = '/Users/eric/Dropbox/Capture/design/mobile/_output/_sliced/current/src';
+var iosAssetDirectory = '';
+var androidAssetDirectory = '';
+
+// drawable-hdpi
+// drawable-mdpi
+// drawable-xhdpi
+// drawable-xxhdpi
+// drawable-xxxhdpi
 
 gulp.task('optimize', function () {
-  return gulp.src('src/**')
+  return gulp.src(sourceDirectory+'/**')
     .pipe(imagemin({
         progressive: true,
         svgoPlugins: [{removeViewBox: false}],
