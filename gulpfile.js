@@ -8,13 +8,13 @@ var pngquant = require('imagemin-pngquant');
 // todo: android directories: add drawable to gulp.dest
 
 gulp.task('optimize', function () {
-    return gulp.src('src/**')
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
-        }))
-        .pipe(gulp.dest('build'));
+  return gulp.src('src/**')
+    .pipe(imagemin({
+        progressive: true,
+        svgoPlugins: [{removeViewBox: false}],
+        use: [pngquant()]
+    }))
+    .pipe(gulp.dest('build'));
 });
 
 gulp.task('move-android', ['optimize'], function() {
