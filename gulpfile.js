@@ -3,9 +3,10 @@ var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var merge = require('merge-stream');
 
-var sourcePath = '/Users/eric/Dropbox/Capture/design/mobile/_output/_sliced/current/src';
-var iosOutputPath = '/Users/eric/projects/capturelive-ios-assets/assets';
-var androidOutputPath = '/Users/eric/projects/current-android/current/src/main/res';
+// Make sure these have absolute paths!
+var sourcePath = '';
+var iosOutputPath = '';
+var androidOutputPath = '';
 
 gulp.task('optimize', function () {
   return gulp.src(sourcePath+'/**')
