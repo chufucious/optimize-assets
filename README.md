@@ -1,7 +1,10 @@
-# What does optimize-assets do?
+# optimize-assets
 This gulp task takes the asset output from Generate Mobile Assets in the Sketch plugin [sketch-mobile-assets](https://github.com/pixi-stix/sketch-mobile-assets/), optimizes them, and then sorts them in the output folders for iOS and Android that you define.
 
-### With NPM, install these packages
+### Install gulp
+Install gulp with [these instructions](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
+
+### Install these NPM packages
 * `npm install --save-dev gulp-imagemin`
 * `npm install --save-dev imagemin-pngquant`
 * `npm install --save-dev merge-streams`
