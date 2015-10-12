@@ -1,6 +1,12 @@
 # optimize-assets
 This gulp task takes the asset output from Generate Mobile Assets in the Sketch plugin [sketch-mobile-assets](https://github.com/pixi-stix/sketch-mobile-assets/), optimizes them, and then sorts them in the output folders for iOS and Android that you define.
 
+###### You should use this if:
+* You use Sketch
+* You are designing for iOS and Android at the same time (one file creates assets for both platforms)
+* You use `sketch-mobile-assets` to export your assets
+* You are familiar with NPM and Gulp
+
 ### Install gulp
 Install gulp with [these instructions](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
