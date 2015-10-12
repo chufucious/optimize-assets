@@ -5,7 +5,7 @@ This gulp task takes the asset output from Generate Mobile Assets in the Sketch 
 * You use Sketch
 * You are designing for iOS and Android at the same time (one file creates assets for both platforms)
 * You use `sketch-mobile-assets` to export your assets
-* You are familiar with NPM and Gulp
+* You are familiar with the command line, NPM, and Gulp
 
 ### Install gulp
 Install gulp with [these instructions](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
@@ -21,6 +21,6 @@ Install gulp with [these instructions](https://github.com/gulpjs/gulp/blob/maste
 * `androidOutputPath` absolute path to your asset directory for your Android project
 
 ### Now, run gulp!
-`gulp`
+In the directory that contains `gulpfile.js`, run `gulp` in the terminal
 
 Oh yeah!!!
