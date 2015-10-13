@@ -18,7 +18,7 @@ Install gulp with [these instructions](https://github.com/gulpjs/gulp/blob/maste
 ### Edit gulpfile.js and define these paths
 * `sourcePath` absolute path to your asset output folder (where you save your assets from Generate Mobile Assets)
 * `iosOutputPath` absolute path to your asset directory for your iOS project
-* `androidOutputPath` absolute path to your asset directory for your Android project
+* `androidOutputPath` absolute path to your asset directory for your Android project. optimize-assets will sort the files into the appropriate `drawable` Android folders
 
 ### Now, run gulp!
 In the directory that contains `gulpfile.js`, run `gulp` in the terminal
