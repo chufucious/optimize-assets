@@ -2,11 +2,7 @@ var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var merge = require('merge-stream');
-
-// Make sure these have absolute paths!
-var sourcePath = '';
-var iosOutputPath = '';
-var androidOutputPath = '';
+var config = require('config.js');
 
 gulp.task('optimize', function () {
   return gulp.src(sourcePath+'/**')

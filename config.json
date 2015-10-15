@@ -1,0 +1,16 @@
+{
+  "ios" : {
+    "src" : [
+      "dev/desktop/js/**/*.js",
+      "!dev/desktop/js/vendor/**"
+    ],
+    "dest" : "build/desktop/js"
+  },
+  "android" : {
+    "src" : [
+      "dev/mobile/js/**/*.js",
+      "!dev/mobile/js/vendor/**"
+    ],
+    "dest" : "build/mobile/js"
+  }
+}
