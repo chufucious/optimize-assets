@@ -11,7 +11,7 @@ gulp.task('optimize', function () {
         svgoPlugins: [{removeViewBox: false}],
         use: [pngquant()]
     }))
-    .pipe(gulp.dest(config.source+'/build'));
+    .pipe(gulp.dest('build'));
 });
 
 var moveAsset = function (type){
@@ -26,7 +26,6 @@ gulp.task('move-android', ['optimize'], function () {
 });
 
 gulp.task('move-ios', ['optimize'], function () {
-  console.log("hi tyler:",config.ios);
   return gulp.src('build/ios/**')
     .pipe(gulp.dest(config.ios));
 });
