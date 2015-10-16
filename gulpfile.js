@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
-var merge = require('merge-stream');
-var config = require('config.js');
+var outputType = ['hdpi', 'mdpi', 'xhdpi', 'xxhdpi', 'xxxhdpi'];
+var config = "./config.json";
 
 gulp.task('optimize', function () {
   return gulp.src(sourcePath+'/**')
@@ -14,24 +14,15 @@ gulp.task('optimize', function () {
     .pipe(gulp.dest('build'));
 });
 
+var moveAsset = function(type){
+  return gulp.src('build/android/'+type+'/**')
+    .pipe(gulp.dest(androidOutputPath+'/drawable-'+type));
+};
+
 gulp.task('move-android', ['optimize'], function() {
-
-  var hdpi = gulp.src('build/android/hdpi/**')
-    .pipe(gulp.dest(androidOutputPath+'/drawable-hdpi'));
-
-  var mdpi = gulp.src('build/android/mdpi/**')
-    .pipe(gulp.dest(androidOutputPath+'/drawable-mdpi'));
-
-  var xhdpi = gulp.src('build/android/xhdpi/**')
-    .pipe(gulp.dest(androidOutputPath+'/drawable-xhdpi'));
-
-  var xxhdpi = gulp.src('build/android/xxhdpi/**')
-    .pipe(gulp.dest(androidOutputPath+'/drawable-xxhdpi'));
-
-  var xxxhdpi = gulp.src('build/android/xxxhdpi/**')
-    .pipe(gulp.dest(androidOutputPath+'/drawable-xxxhdpi'));
-
-  return merge(hdpi, mdpi, xhdpi, xxhdpi, xxxhdpi);
+  return outputType.forEach(function(type){
+      return moveAsset(type);
+    });
 });
 
 gulp.task('move-ios', ['optimize'], function() {

@@ -1,16 +1,5 @@
 {
-  "ios" : {
-    "src" : [
-      "dev/desktop/js/**/*.js",
-      "!dev/desktop/js/vendor/**"
-    ],
-    "dest" : "build/desktop/js"
-  },
-  "android" : {
-    "src" : [
-      "dev/mobile/js/**/*.js",
-      "!dev/mobile/js/vendor/**"
-    ],
-    "dest" : "build/mobile/js"
-  }
+  "sourcePath" : "/Users/eric/Dropbox/Capture/design/mobile/_output/_sliced/current/src",
+  "iosOutputPath" : "/Users/eric/projects/capturelive-ios-assets/assets",
+  "androidOutputPath" : "/Users/eric/projects/current-android/current/src/main/res"
 }
