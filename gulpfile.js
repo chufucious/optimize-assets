@@ -1,8 +1,8 @@
 var gulp        = require('gulp');
 var imagemin    = require('gulp-imagemin');
 var pngquant    = require('imagemin-pngquant');
-var outputType  = ['hdpi', 'mdpi', 'xhdpi', 'xxhdpi', 'xxxhdpi'];
 var config      = require("./config.json");
+var outputType  = ['hdpi', 'mdpi', 'xhdpi', 'xxhdpi', 'xxxhdpi'];
 
 gulp.task('optimize', function () {
   return gulp.src(config.source+'/**')
