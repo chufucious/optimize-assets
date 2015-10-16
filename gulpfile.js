@@ -11,7 +11,7 @@ gulp.task('optimize', function () {
         svgoPlugins: [{removeViewBox: false}],
         use: [pngquant()]
     }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest(config.source+'/build'));
 });
 
 var moveAsset = function (type){
