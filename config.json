@@ -1,5 +1,5 @@
 {
-  "sourcePath" : "/Users/eric/Dropbox/Capture/design/mobile/_output/_sliced/current/src",
-  "iosOutputPath" : "/Users/eric/projects/capturelive-ios-assets/assets",
-  "androidOutputPath" : "/Users/eric/projects/current-android/current/src/main/res"
+  "source" : "/Users/eric/Dropbox/Capture/design/mobile/_output/_sliced/current/src",
+  "ios" : "/Users/eric/projects/capturelive-ios-assets/assets",
+  "android" : "/Users/eric/projects/current-android/current/src/main/res"
 }
