@@ -3,6 +3,11 @@ var imagemin    = require('gulp-imagemin');
 var pngquant    = require('imagemin-pngquant');
 var config      = require("./config.json");
 var outputType  = ['hdpi', 'mdpi', 'xhdpi', 'xxhdpi', 'xxxhdpi'];
+var del         = require('del');
+
+gulp.task('clean', function(cb) {
+  del([config.source+'/../build/**'], cb);
+});
 
 gulp.task('optimize', function () {
   return gulp.src(config.source+'/**')
@@ -30,4 +35,4 @@ gulp.task('move-ios', ['optimize'], function () {
     .pipe(gulp.dest(config.ios));
 });
 
-gulp.task('default', ['optimize', 'move-android', 'move-ios']);
+gulp.task('default', ['clean', 'optimize', 'move-android', 'move-ios']);
