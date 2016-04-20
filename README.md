@@ -13,7 +13,7 @@ Install gulp with [these instructions](https://github.com/gulpjs/gulp/blob/maste
 ### Install these NPM packages
 * `npm install gulp-imagemin`
 * `npm install imagemin-pngquant`
-* `npm install merge-streams`
+* `npm install merge-stream`
 
 ### Edit config.json and define these paths
 * `source` absolute path to your asset output folder (where you save your assets from Generate Mobile Assets)
