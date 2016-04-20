@@ -11,9 +11,9 @@ This gulp task takes the asset output from Generate Mobile Assets in the Sketch 
 Install gulp with [these instructions](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
 ### Install these NPM packages
-* `npm install --save-dev gulp-imagemin`
-* `npm install --save-dev imagemin-pngquant`
-* `npm install --save-dev merge-streams`
+* `npm install gulp-imagemin`
+* `npm install imagemin-pngquant`
+* `npm install merge-streams`
 
 ### Edit config.json and define these paths
 * `source` absolute path to your asset output folder (where you save your assets from Generate Mobile Assets)
